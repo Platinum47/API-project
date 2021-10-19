@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <title>Coin Crisis</title>
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="https://bulma.io">
+            <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+          </a>
+      
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="index.html">
+              Home
+            </a>
+      
+            <a class="navbar-item active" href="community.html">
+              Community 
+            </a>
+          </div>
+      
+         
+        </div>
+      </nav>
+
+      <section class="hero is-primary">
+        <div class="hero-body">
+          <p class="title">
+            Community Forum
+          </p>
+          <p class="subtitle">
+            Welcome to the Coin Crisis community page! Lets discuss the madness...
+          </p>
+        </div>
+      </section>
+<br>
+      <!-- User input section -->
+      <div class="container">
+        <article class="media">
+          <div class="media-content">
+            <div class="field">
+              <p class="control">
+                <textarea id="userComment" class="textarea" placeholder="Add a comment..."></textarea>
+              </p>
+            </div>
+            <nav class="level">
+              <div class="level-left">
+                <div class="level-item">
+                  <a id="btnAddComment" class="button is-info">Add Comment</a>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </article>
+      </div>
+      <hr>
+      <div class="container" id="savedComments">
+        
+        
+      </div>
+      <br>
+
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="js/community.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Coin Crisis</title>
+</head>
+
+<body>
+  <!-- Nav bar -->
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://bulma.io">
+        <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+      </a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item active" href="index.html">
+          Home
+        </a>
+
+        <a class="navbar-item" href="community.html">
+          Community
+        </a>
+      </div>
+    </div>
+  </nav>
+  <!-- header section -->
+  <section class="hero is-danger">
+    <div class="hero-body">
+      <p class="title">
+        Coin Crisis
+      </p>
+      <p class="subtitle">
+        Welcom to Coin Crisis, enjoy watching things crash!
+      </p>
+    </div>
+  </section>
+  <br>
+
+  <!-- Currency section -->
+  <div class="container">
+    <h1 class="title has-text-centered">Bitcoin Rates by Currency</h1>
+    <h2 class="subtitle has-text-centered">Real-time data from the CoinDesk API.</h2>
+    <div class="columns">
+      <!-- USD div -->
+      <div id="usd" class="column">
+
+      </div>
+      <!-- GBP div -->
+      <div id="gbp" class="column">
+
+      </div>
+      <!-- EUR div -->
+      <div id="eur" class="column">
+
+      </div>
+    </div>
+  </div>
+  <hr>
+
+<!-- Search for Coin Section -->
+<div class="container is-fluid">
+
+  <div class="columns">
+    <div class="column is-4">
+      <section class="hero is-link">
+        <div class="hero-body">
+          <p class="title">
+            Search for a Coin:
+          </p>
+          <div class="field is-grouped">
+            <div class="control">
+              <input id="searchInput" class="input" type="text" placeholder="Bitcoin, Solana, Ethereum">
+            </div>
+            <div class="control">
+              <button id="btnSearch" class="button is-success">Search</button>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+    </div>
+    <div id="coinDisplay" class="column is-8"></div>
+      
+    </div>
+    <div id="newsDisplay" class="column is-7"></div>
+  </div>
+
+</div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/searchnews.js"></script>
+</body>
+
+</html>
